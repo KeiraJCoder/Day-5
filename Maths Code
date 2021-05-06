@@ -1,0 +1,119 @@
+num1 = 15
+num2 = 8
+
+if (num1 + num2) % 2 == 0:
+    print ("Success")
+else:
+    print ("Massive Fail")
+    
+    
+    time = 15
+town_of_work = ("chester")
+place_of_home = ("home")
+
+if time >= 8:
+    print (town_of_work)
+elif time >= 16: 
+    print (place_of_home)
+    
+    
+    def add_up (num1, num2):
+    return num1 + num2
+add_up (7,3)
+print(add_up(29,9))
+
+def multiply (num1, num2):
+    return num1 * num2
+multiply (7,3)
+print(multiply(13,75))
+
+def multiply (num1, num2, num3, num4):
+    return num1 * num2 + num3 + num4   #return is basically pressing equals
+
+print(multiply(13,75,60,32))
+
+
+pin = 1234
+balance = 1000
+account_number = 12345678
+def print_dispensing_cash(pin_number, amount):
+    global pin
+    global balance
+    global acc_entered
+    if account_number == acc_entered:
+        if pin_number == pin and amount <= balance:
+            balance -= amount
+            print(f"Pin correct, now dispensing £{amount}. Your remaining balance is balance £{balance}.")
+        elif pin == pin_number and amount > balance:
+            print(f"Not enough moneeehhhhhhh. Available is {balance}")
+        elif pin != pin_number:
+            print("Pin incorrect. You have three more tries. Let's roll those dice.")
+    else:
+        print("Check the ACC number!")
+        start_atm()
+def start_atm():
+    global acc_entered
+    acc_entered = int(input("What is the 8 digit account number?"))
+    pin_number = int(input("What's your fackin PIN!"))
+    amount_num = int(input("How much wonga?"))
+    print_dispening_cash (pin_number, amount_num)
+    start_atm()
+    
+    
+    
+    
+    x = 1
+while x <= 13:
+    print ("Hello World")
+    x += 1
+    
+    
+    import random
+import math
+
+x = random.randint(0,30)
+print(x)
+
+from random import randrange
+print(random.randint(0,30))
+
+
+x = random.sample(range(0, 30), 6)
+
+if (num % 7 == 1): 
+    print ("Divisible by 7") 
+elif: 
+    print ("BIG OL NOPE")
+else:
+    print (x)
+
+
+for i in range (6):
+    num = random.range(0,30, 6)
+    if (num % 7 == 0):
+        print("VERY divisible {}".format(num))
+    else:
+        print ("Don't you even try {}".format(num))
+
+
+rand_sample = random.sample(range(1,30),6)
+print(rand_sample)
+for x in rand_sample:
+    if x&7 == 0:
+        print(f"{x} was found, and it is Divisible by 7")
+    else:
+        print(f"{x} was found, is not Divisible by 7")
+        
+        
+        
+        def add_up (num1, num2):
+    return num1 + num2
+add_up (7,3)
+print(add_up(2,5))
+
+def multiply_by_nine_fifths (celcius):
+    return celcius * (9/5)
+def get_fahrenheit (celcius) :
+    return multiply_by_nine_fifths(celcius) +32
+
+print ("The temperature is {}° F".format(get_fahrenheit(-32)))
